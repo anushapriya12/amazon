@@ -11,10 +11,10 @@
 		<div class="login-content">
 			<form>
 				<div class="box">
-					<h2>Login</h2> <br>
+					<h2>Login</h2>
 					<b> Email or mobile phone number </b> <br>
-					<input type="text" name="" size="35"> <br> <br>
-					<input type="button" value="Continue"  style="background-color:#F2A80B; width:260px;">
+					<input type="text" name="" size="35" id="user"> <br> <br>
+					<input type="button" onclick="myFunction()" value="Continue"  style="background-color:#F2A80B; width:260px;">
 					<br> <br>
 					<a href=""> Need help?</a>
 				</div>
@@ -39,5 +39,18 @@
 			</div>
 		</center>
 		</footer>
+	<script>
+		function myFunction() {
+			var email = document.getElementById("user").value;
+				if ( email == "8985135457")
+					{
+					alert("Login sucessfully");
+					}
+				else
+					{
+					alert("Enter valid email id or phone number");
+					}
+		}
+	</script>
 	</body>
 </html>
